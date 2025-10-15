@@ -1,0 +1,20 @@
+{
+    "name": "gillgonzales/app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gillgonzales\\App\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^12.34",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "scripts":{
+        "start":"php -S 0.0.0.0:80 -t src"
+    },
+    "config": {
+        "process-timeout":0
+    }
+}
