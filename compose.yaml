@@ -45,7 +45,7 @@ services:
     phpmyadmin:
         image: 'phpmyadmin/phpmyadmin:latest'
         ports:
-          - '8093:80'
+          - '${FORWARD_MYADMIN_PORT:-8093}:80'
         environment:
             PMA_HOST: 'mariadb'
         networks:
